@@ -1,1 +1,1 @@
-# project-todo-list
+This is a common Todo-list project designed to apply various concepts covered throughout The Odin Project's Javascript course, including ES6 modules, webpack, and fundemental programming principles for writing cleaner, more effective code.

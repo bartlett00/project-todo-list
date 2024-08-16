@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'aileronregular';
+    src: url('/src/fonts/aileron/aileron-regular-webfont.woff2') format('woff2'),
+         url('/src/fonts/aileron/aileron-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'aileronregular';
+}
+
+button {
+    background-color: 	#d2deeb;
+    border: none;
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 24px;
+}
+
+[for='togglePrio'] {
+    display: inline-block;
+}
+
+label {
+    display: none;
+}
+
+form {
+    padding: 1rem;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+#content-container {
+    border: 2px solid black;
+    padding: .7rem;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-auto-flow: row;
+    overflow: hidden;
+    gap: 20px;
+}
+
+#project {
+ display: grid;
+ gap: .7rem;
+}
+
+#UI-title {
+    font-size: 48px;
+}
+
+.project-item {
+    display: grid;
+    border: 2px solid #4663ac;
+    grid-template-columns: 1fr .1fr;
+    grid-template-rows: auto;
+    padding: .5rem;
+}
+
+.project-delete-btn {
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.todo-container {
+    grid-column-start: span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+}
+
+.todo-priority {
+    background-color: #4663ac;
+    color: #e1f1fd;
+}
+
+.todo-complete {
+    background-color: #c8d9ed;
+    color: gray;
+}
+.todo-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+    /* width: auto; */
+}
+
+.todo-list-container {
+    display: grid;
+    padding: .7rem;
+    gap: 2rem;
+}
+
+.todo-title {
+    order: 1;
+}
+.todo-complete-checkbox {
+    order: 2;
+    justify-self: end;
+}
+
+.todo-prio-checkbox {
+    order: 4;
+}
+
+.todo-desc {
+    order: 3;
+    grid-column: span 2;
+}
+
+.todo-date {
+    order: 5;
+}
+
+.todo-item > .delete-btn {
+    order: 6;
+    justify-self: end;
+}
+
+ .todo-prio-checkbox, .todo-desc {
+    grid-column: span 2;
+}
+
+.delete-btn, .project-delete-btn {
+    height: 1.2rem;
+    width: 1.2rem;
+    display: grid;
+    justify-content: center;
+}
+
+.project-delete-btn {
+    justify-self: center;
+    align-self: center;
+}
+
+.project-title {
+    padding-left: .5rem;
+}
+
+[data-index='0'] > .project-title {
+    height: min-content;
+}
+
+[data-index='0'] {
+    grid-template-rows: min-content;
+    height: min-content;
+} 
+
+.hidden {
+    display: none;
+}  
+
